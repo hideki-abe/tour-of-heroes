@@ -6,6 +6,7 @@ import {HEROES} from "../mock-heroes";
 import {HeroDetailComponent} from "../hero-detail/hero-detail.component";
 import {HeroService} from "../hero.service";
 import {MessageService} from "../message.service";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-heroes',
@@ -14,7 +15,8 @@ import {MessageService} from "../message.service";
     UpperCasePipe,
     FormsModule,
     NgFor,
-    HeroDetailComponent
+    HeroDetailComponent,
+    RouterLink
   ],
   templateUrl: './heroes.component.html',
   styleUrl: './heroes.component.css'
